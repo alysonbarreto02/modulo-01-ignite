@@ -1,7 +1,7 @@
 import { FcLike } from "react-icons/fc";
 import { RiDeleteBin6Line } from 'react-icons/ri'
 
-export default function Comment(){
+export default function Comment({content}){
     return (
         <div className="mt-3">
             <div className="flex items-start space-x-2 relative">
@@ -10,7 +10,7 @@ export default function Comment(){
                 <div className="bg-line flex-1 rounded-lg p-2 flex flex-col">
                     <span className="text-xs text-text">Alyson Kevin (você)</span>
                     <span className="text-xs text-gray-600">Cerca de 2h</span>
-                    <p className="text-sm mt-2 text-text">Muito massa cara show de bola</p>
+                    <p className="text-sm mt-2 text-text">{content}</p>
                 </div>
             </div>
 
